@@ -4,6 +4,7 @@ Function: Alert user if VPN provider modifies Canary notice
 Status: In development
 '''
 
+import os
 import sys
 import requests
 import configparser
@@ -22,7 +23,9 @@ def lookup(arg):
         sys.exit(0)
 
     config = configparser.ConfigParser()
-    config.read('info.ini')
+
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    config.read(dir_path + '/info.ini')
 
     try:
         link = config[arg]['link']
@@ -53,4 +56,4 @@ def check_canary(vpn_link, vpn_canary):
 try:
     lookup(sys.argv[1])
 except IndexError:
-    print("Please provide a valid argument, or run 'canary.py -help' for more info")
+    print("Please provide a valid argument, or run 'python canary.py -help' for more info")
