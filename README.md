@@ -26,3 +26,13 @@ Coal Mine is a tool that checks various VPN providers [Canary notices](https://e
 >python canary.py -slickvpn
 
 >python canary.py -proxy.sh
+
+**Notification Examples** (hopefully you never see these):
+
+Windows:
+
+![Windows Alert](https://i.imgur.com/rbv9kgD.png)
+
+Linux:
+
+![Linux Alert](https://i.imgur.com/JK7kSv5.png)
