@@ -15,7 +15,7 @@ Coal Mine is a tool that checks various VPN providers [Canary notices](https://e
 - IVPN
 - Proxy.sh
 
-**To run** (I'll streamline this later):
+**To run** (I'll streamline this at some point):
 - Clone project
 - Install dependencies
 - Add _canary.py_ to a cronjob or scheduled task
@@ -31,8 +31,8 @@ Coal Mine is a tool that checks various VPN providers [Canary notices](https://e
 
 Windows:
 
-![Windows Alert](https://i.imgur.com/rbv9kgD.png)
+![Windows Alert](https://i.imgur.com/ot59THn.png)
 
 Linux:
 
-![Linux Alert](https://i.imgur.com/JK7kSv5.png)
+![Linux Alert](https://i.imgur.com/fdM5caR.png)
