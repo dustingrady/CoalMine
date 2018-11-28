@@ -25,7 +25,6 @@ def lookup(arg):
         sys.exit(0)
 
     config = configparser.ConfigParser()
-
     dir_path = os.path.dirname(os.path.realpath(__file__))
     config.read(dir_path + '/info.ini')
 
@@ -45,13 +44,12 @@ def check_canary(vpn_link, vpn_canary):
     for statement in vpn_canary:
         if statement not in res_text:
             if 'linux' in sys.platform:
-
-                header = "VPN Canary Warning!"
+                header = "VPN Canary Alert!"
                 body = "The following has been removed from your VPNs Canary page:\n" + statement
                 subprocess.call(['notify-send', header, body])
 
             elif 'win' in sys.platform:
-                win32api.MessageBox(0, 'The following has been removed from your VPNs Canary page:\n' + statement, 'Canary Alert!')
+                win32api.MessageBox(0, 'The following has been removed from your VPNs Canary page:\n' + statement, 'VPN Canary Alert!')
 
 
 try:
