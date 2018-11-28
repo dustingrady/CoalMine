@@ -1,17 +1,19 @@
+#!/usr/bin/env python
+
 '''
 Author: Dustin Grady
 Function: Alert user if VPN provider modifies Canary notice
-Status: In development
+Status: Working/ Tested
 '''
 
 import os
 import sys
 import requests
+import subprocess
 import configparser
-if sys.platform == 'linux':
-    import notify2  # Linux
-elif sys.platform == 'win32':
-    import win32api  # Windows
+
+if sys.platform == 'win32':
+    import win32api
 
 
 '''Lookup sysarg and corresponding vpn_link/ vpn_canary in .ini file'''
@@ -42,14 +44,13 @@ def check_canary(vpn_link, vpn_canary):
 
     for statement in vpn_canary:
         if statement not in res_text:
-            if sys.platform == 'linux':
-                print("ALERT! " + statement +" is missing!")
-                notify2.init("Notification")
-                n = notify2.Notification("Canary Alert!",
-                                         "The following has been removed from your VPNs Canary page:\n" + statement,
-                                         "notification-message-im")
-                n.show()
-            elif sys.platform == 'win32':
+            if 'linux' in sys.platform:
+
+                header = "VPN Canary Warning!"
+                body = "The following has been removed from your VPNs Canary page:\n" + statement
+                subprocess.call(['notify-send', header, body])
+
+            elif 'win' in sys.platform:
                 win32api.MessageBox(0, 'The following has been removed from your VPNs Canary page:\n' + statement, 'Canary Alert!')
 
 
