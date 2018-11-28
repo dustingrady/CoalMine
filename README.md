@@ -42,3 +42,8 @@ Windows:
 Because cronjobs use a different DISPLAY variable by default, you may not see the notifications displayed.
 
 In this case, you will need to export your current env vars using [this method](https://askubuntu.com/questions/978382/how-can-i-show-notify-send-messages-triggered-by-crontab) so that cron can display the notifications properly.
+
+For a list of supported environments, [check here](https://github.com/pa4080/cron-gui-launcher#supportedtested-desktop-environments).
+
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=W2FJJJAM7EESC&item_name=Development+efforts/+coffee+fund&currency_code=USD&source=url)
