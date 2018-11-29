@@ -20,7 +20,7 @@ def lookup(arg):
     arg = arg.strip('-').upper()
 
     if arg == 'HELP':
-        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-lokun\n-slickvpn\n-ivpn\n-proxy.sh')
+        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-lokun\n-slickvpn\n-ivpn\n-proxy.sh\n-proton')
         sys.exit(0)
 
     config = configparser.ConfigParser()
@@ -44,11 +44,11 @@ def check_canary(vpn_link, vpn_canary):
         if statement not in res_text:
             if 'linux' in sys.platform:
                 header = "VPN Canary Alert!"
-                body = "The following has been removed from your VPNs Canary page:\n" + statement
+                body = "The following has been modified on your VPNs Canary page:\n" + statement
                 subprocess.call(['notify-send', header, body])
 
             elif 'win' in sys.platform:
-                win32api.MessageBox(0, 'The following has been removed from your VPNs Canary page:\n' + statement, 'VPN Canary Alert!')
+                win32api.MessageBox(0, 'The following has been modified on your VPNs Canary page:\n' + statement, 'VPN Canary Alert!')
 
 
 try:
