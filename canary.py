@@ -11,7 +11,6 @@ import sys
 import requests
 import subprocess
 import configparser
-
 if sys.platform == 'win32':
     import win32api
 
