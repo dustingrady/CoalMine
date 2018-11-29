@@ -18,6 +18,7 @@ Coal Mine is a tool that checks various VPN providers [Canary notices](https://e
 - SlickVPN
 - IVPN
 - Proxy.sh
+- Proton
 
 ---
 
@@ -30,7 +31,7 @@ Coal Mine is a tool that checks various VPN providers [Canary notices](https://e
 **Usage Examples**:
 >python canary.py -nord
 
->python canary.py -slickvpn
+>python canary.py -proton
 
 >python canary.py -proxy.sh
 
