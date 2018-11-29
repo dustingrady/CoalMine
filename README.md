@@ -1,5 +1,5 @@
 # Coal Mine
-![Canary Image](https://i.imgur.com/Ulxjv05.png)
+![Canary Image](https://i.imgur.com/JRsJ8Q1.png)
 
 Coal Mine is a tool that checks various VPN providers [Canary notices](https://en.wikipedia.org/wiki/Warrant_canary) and reports any changes that have been found back to the user.
 
