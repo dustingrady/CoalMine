@@ -19,6 +19,8 @@ Coal Mine is a tool that checks various VPN providers [Canary notices](https://e
 - IVPN
 - Proxy.sh
 - Proton
+- Spyoff
+- Azire
 
 ---
 

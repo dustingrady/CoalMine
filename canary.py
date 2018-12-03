@@ -20,7 +20,7 @@ def lookup(arg):
     arg = arg.strip('-').upper()
 
     if arg == 'HELP':
-        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-lokun\n-slickvpn\n-ivpn\n-proxy.sh\n-proton')
+        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-lokun\n-slickvpn\n-ivpn\n-proxy.sh\n-proton\n-spyoff\n-azire')
         sys.exit(0)
 
     config = configparser.ConfigParser()
