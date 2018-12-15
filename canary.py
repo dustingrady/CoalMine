@@ -2,7 +2,7 @@
 
 '''
 Author: Dustin Grady
-Function: Alert user if VPN provider modifies Canary notice
+Function: Alert user if VPN/ service provider modifies canary notice
 Status: Working/ Tested
 '''
 
@@ -20,7 +20,7 @@ def lookup(arg):
     arg = arg.strip('-').upper()
 
     if arg == 'HELP':
-        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-lokun\n-slickvpn\n-ivpn\n-proxy.sh\n-proton\n-spyoff\n-azire')
+        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-slickvpn\n-ivpn\n-proxy.sh\n-proton\n-spyoff\n-azire\n-liquid\n-ace\n-cloudflare')
         sys.exit(0)
 
     config = configparser.ConfigParser()
