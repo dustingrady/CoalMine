@@ -8,6 +8,7 @@ Coal Mine is a tool that checks various VPN/ service providers [Canary notices](
 **Supported Platforms**:
 - Linux
 - Windows
+- Mac
 
 ---
 
