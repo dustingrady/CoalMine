@@ -56,7 +56,7 @@ Coal Mine is a tool that checks various VPN/ service providers [Canary notices](
 
 **Mac**:
 
-![Mac Alert](https://i.imgur.com/tMMFA17.png)
+![Mac Alert](https://i.imgur.com/DGNhLVh.png)
 
 ---
 
