@@ -23,6 +23,7 @@ Coal Mine is a tool that checks various VPN/ service providers [Canary notices](
 - [Liquid](https://www.liquidvpn.com/)
 - [Ace](https://www.acevpn.com/)
 - [Cloudflare](https://www.cloudflare.com/)
+- [VPNHT](https://vpn.ht/)
 
 ---
 
@@ -45,12 +46,17 @@ Coal Mine is a tool that checks various VPN/ service providers [Canary notices](
 
 **Linux**:
 
-![Linux Alert](https://i.imgur.com/fdM5caR.png)
+![Linux Alert](https://i.imgur.com/FVpYt66.png)
 
 
 **Windows**:
 
-![Windows Alert](https://i.imgur.com/ot59THn.png)
+![Windows Alert](https://i.imgur.com/12P3WGv.png)
+
+
+**Mac**:
+
+![Mac Alert](https://i.imgur.com/tMMFA17.png)
 
 ---
 
