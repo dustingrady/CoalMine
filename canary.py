@@ -13,12 +13,13 @@ import subprocess
 import configparser
 if sys.platform == 'win32':
     import win32api
+if sys.platform == 'darwin':
+    from easygui import msgbox
 
 
 '''Lookup sysarg and corresponding vpn_link/ vpn_canary in .ini file'''
 def lookup(arg):
     arg = arg.strip('-').upper()
-
     if arg == 'HELP':
         print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-slickvpn\n-ivpn\n-proxy.sh\n-proton\n-spyoff\n-azire\n-liquid\n-ace\n-cloudflare\n-vpnht')
         sys.exit(0)
@@ -34,20 +35,24 @@ def lookup(arg):
     except KeyError:
         print('Error reading value. Did you provide a valid flag?')
 
-
 '''Check appropriate website for statements'''
 def check_canary(vpn_link, vpn_canary):
     res = requests.get(vpn_link)
     res_text = res.text
-
+    platform = sys.platform
     for statement in vpn_canary:
         if statement not in res_text:
-            if 'linux' in sys.platform:
-                header = "VPN Canary Alert!"
+            if platform == 'linux' or platform == 'linux2':  # Linux
+                title = "VPN Canary Alert!"
                 body = "The following has been modified on your VPNs Canary page:\n" + statement
-                subprocess.call(['notify-send', header, body])
+                subprocess.call(['notify-send', title, body])
 
-            elif 'win' in sys.platform:
+            elif platform == 'darwin':  # Mac
+                title = "VPN Canary Alert!"
+                body = "The following has been modified on your VPNs Canary page:\n" + statement
+                msgbox(body, title)
+
+            elif platform == 'win32':  # Windows
                 win32api.MessageBox(0, 'The following has been modified on your VPNs Canary page:\n' + statement, 'VPN Canary Alert!')
 
 
