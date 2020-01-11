@@ -21,7 +21,7 @@ if sys.platform == 'darwin':
 def lookup(arg):
     arg = arg.strip('-').upper()
     if arg == 'HELP':
-        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-slickvpn\n-ivpn\n-proxy.sh\n-proton\n-spyoff\n-azire\n-liquid\n-ace\n-cloudflare\n-vpnht')
+        print('To run: "python canary.py -<flag>\nValid flags:\n-nord\n-vpnsecure\n-slickvpn\n-ivpn\n-proxy.sh\n-proton\n-spyoff\n-azire\n-liquid\n-ace\n-cloudflare\n-vpnht\n-anonine')
         sys.exit(0)
 
     config = configparser.ConfigParser()
