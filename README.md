@@ -13,18 +13,19 @@ Coal Mine is a tool that checks various VPN/ service providers [Canary notices](
 ---
 
 **Supported VPNs/ service providers**:
-- [Nord](https://nordvpn.com/)
-- [VPNSecure](https://www.vpnsecure.me/)
-- [SlickVPN](https://www.slickvpn.com/)
-- [IVPN](https://www.ivpn.net/)
-- [Proxy.sh](https://proxy.sh/)
-- [Proton](https://protonvpn.com/)
-- [Spyoff](https://www.spyoff.com/)
-- [Azire](https://www.azirevpn.com/)
-- [Liquid](https://www.liquidvpn.com/)
 - [Ace](https://www.acevpn.com/)
+- [Anonine](https://anonine.com/)
+- [Azire](https://www.azirevpn.com/)
 - [Cloudflare](https://www.cloudflare.com/)
+- [IVPN](https://www.ivpn.net/)
+- [Liquid](https://www.liquidvpn.com/)
+- [Nord](https://nordvpn.com/)
+- [Proton](https://protonvpn.com/)
+- [Proxy.sh](https://proxy.sh/)
+- [SlickVPN](https://www.slickvpn.com/)
+- [Spyoff](https://www.spyoff.com/)
 - [VPNHT](https://vpn.ht/)
+- [VPNSecure](https://www.vpnsecure.me/)
 
 ---
 
